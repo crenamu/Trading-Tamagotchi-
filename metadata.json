@@ -1,0 +1,7 @@
+{
+  "name": "Trading Tamagotchi (트레이딩 다마고치)",
+  "description": "A companion service for zero-cost trading practice. Learn, verify, and adapt with peers before entering the real market.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

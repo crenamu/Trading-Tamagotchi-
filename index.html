@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Tamagotchi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+          --background: oklch(1.0000 0 0);
+          --foreground: oklch(0.1884 0.0128 248.5103);
+          --card: oklch(0.9784 0.0011 197.1387);
+          --card-foreground: oklch(0.1884 0.0128 248.5103);
+          --popover: oklch(1.0000 0 0);
+          --popover-foreground: oklch(0.1884 0.0128 248.5103);
+          --primary: oklch(0.6723 0.1606 244.9955);
+          --primary-foreground: oklch(1.0000 0 0);
+          --secondary: oklch(0.1884 0.0128 248.5103);
+          --secondary-foreground: oklch(1.0000 0 0);
+          --muted: oklch(0.9222 0.0013 286.3737);
+          --muted-foreground: oklch(0.1884 0.0128 248.5103);
+          --accent: oklch(0.9392 0.0166 250.8453);
+          --accent-foreground: oklch(0.6723 0.1606 244.9955);
+          --destructive: oklch(0.6188 0.2376 25.7658);
+          --destructive-foreground: oklch(1.0000 0 0);
+          --border: oklch(0.9317 0.0118 231.6594);
+          --input: oklch(0.9809 0.0025 228.7836);
+          --ring: oklch(0.6818 0.1584 243.3540);
+          --radius: 1rem;
+          --font-sans: 'Open Sans', 'Pretendard', sans-serif;
+          
+          --sidebar: oklch(0.9784 0.0011 197.1387);
+          --sidebar-foreground: oklch(0.1884 0.0128 248.5103);
+          --sidebar-primary: oklch(0.6723 0.1606 244.9955);
+          --sidebar-primary-foreground: oklch(1.0000 0 0);
+          --sidebar-accent: oklch(0.9392 0.0166 250.8453);
+          --sidebar-accent-foreground: oklch(0.6723 0.1606 244.9955);
+          --sidebar-border: oklch(0.9271 0.0101 238.5177);
+          --sidebar-ring: oklch(0.6818 0.1584 243.3540);
+        }
+
+        body { 
+          font-family: var(--font-sans);
+          background-color: var(--background);
+          color: var(--foreground);
+          -webkit-font-smoothing: antialiased;
+        }
+
+        /* Custom utility classes for Shadcn colors using CSS variables */
+        .bg-background { background-color: var(--background); }
+        .bg-card { background-color: var(--card); }
+        .bg-primary { background-color: var(--primary); }
+        .bg-secondary { background-color: var(--secondary); }
+        .bg-muted { background-color: var(--muted); }
+        .bg-accent { background-color: var(--accent); }
+        .bg-sidebar { background-color: var(--sidebar); }
+        
+        .text-foreground { color: var(--foreground); }
+        .text-card-foreground { color: var(--card-foreground); }
+        .text-primary-foreground { color: var(--primary-foreground); }
+        .text-secondary-foreground { color: var(--secondary-foreground); }
+        .text-muted-foreground { color: var(--muted-foreground); }
+        .text-primary { color: var(--primary); }
+        .text-sidebar-foreground { color: var(--sidebar-foreground); }
+        
+        .border-border { border-color: var(--border); }
+        .border-sidebar-border { border-color: var(--sidebar-border); }
+        .ring-ring { --tw-ring-color: var(--ring); }
+        .rounded-radius { border-radius: var(--radius); }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "recharts": "https://esm.sh/recharts@^3.6.0"
+      }
+    }
+    </script>
+</head>
+<body class="bg-background text-foreground">
+    <div id="root"></div>
+</body>
+</html>
